@@ -1,13 +1,121 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  margin: 0;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  margin: 2rem;
+  height: calc(100vh - 7rem);
+  padding: 2rem;
+  background-color: #f5e8dd;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+}
+.circle {
+  background: #b5c0d0;
+  border-radius: 50%;
+  width: 18rem;
+  height: 18rem;
+  align-self: center;
+}
+.form-input {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+}
+.form-label {
+  font-size: 1.4em;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+.name-list {
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #b5c0d0;
+  padding: 0.5rem;
+  width: 24%;
+}
+.name-list ul {
+  list-style: none;
+  padding: 0;
+}
+.name-list ul li {
+  padding: 0.4rem;
+  border: 1px solid rgb(41, 40, 40);
+  border-radius: 5px;
+  font-weight: 600;
+  color: rgb(41, 40, 40);
+  display: flex;
+  justify-content: space-between;
+}
+.name-list h2 {
+  text-align: center;
+}
+.name-list ul li:nth-child(odd) {
+  background-color: #ccd3ca;
+}
+.name-list ul li:nth-child(even) {
+  background-color: #eed3d9;
+}
+.addButton {
+  margin-left: 1rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #ccd3ca;
+  border: none;
+}
+.spinner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.spinner-button {
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #eed3d9;
+}
+.deleteIcon {
+  color: rgb(185, 42, 102);
+  font-size: 1.2rem;
+  margin-bottom: 0 !important;
+}
+.indicator {
+  height: 30px;
+  width: 20px;
+  background-color: red;
+  clip-path: polygon(49% 0, 24% 100%, 73% 100%);
+  transform: rotate(270deg);
+}
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wniner-label {
+  background-color: whitesmoke;
+  padding: 0.7rem;
+  font-weight: 600;
+  margin-top: 3px;
 }
